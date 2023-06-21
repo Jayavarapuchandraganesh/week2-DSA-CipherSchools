@@ -1,0 +1,39 @@
+package keywords;
+class loan {
+	int rate;
+	loan(){
+		System.out.println("hi, i am default constructer");
+		}
+	lone (int rate){
+	this.rate=rate;
+	}
+	void printrate(){
+		System.out.println(this.rate);
+	}
+}
+
+class carloan extends loan {
+	int rate;
+	carloan(){
+	System.out.println("hi , i am default constructor of acarloan");
+	System.out.println("super.rate);
+	}
+	carloan(int rate)
+	{
+		super(7);
+		this.rate=rate;
+	}
+	void printrate() {
+	System.out.println(this.rate);
+	super.printrate();
+	System.out.println(super.rate);
+	}
+}
+public class SuperStudy {
+	public static void main(String[] args) {
+	carloan c1 = new carloan(8);
+	carloan c2 = new carloan();
+	}
+}
+	
+	
